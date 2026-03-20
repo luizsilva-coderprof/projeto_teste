@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordem dos filmes da trilogia</title>
+     <meta charset="UTF-8">
+    <title>Contato - Terra Média</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="titulo_principal">
-        <h1>O senhor dos anéis</h1>
-        <h2>Uma das trilogias mais famosas do cinema</h2>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sinopse.html">Sinopse</a>
-            <a href="imagemfilme.html">Imagem do filme</a>
-            <a href="personagens.html">Personagens principais</a>
-            <a href="informacoes.html">Informações</a>
-            <a href="ordem.html">Ordem dos filmes</a>
-            <a href="curiosidades.html">Curiosidades</a>
-            <a href="impacto.html">Impacto Cultural</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </div>
 
-    <main>
-        <h2>Entre em contato</h2>
+<h1 id="titulo_principal">Envie sua mensagem à Terra Média</h1>
+<p>Use o formulário abaixo para enviar sua mensagem ao Conselho de Elrond.</p>
 
-        <form action="" method="post">
-            <label>Nome:</label>
-            <input type="text" name="nome" placeholder="Nome" required><br>
+<form action="" method="post">
+  <label>Seu nome (como é conhecido na Terra Média):</label>
+  <input type="text" placeholder="Ex: Aragorn, filho de Arathorn"><br><br>
 
-            <label>E-mail:</label>
-            <input type="email" name="email" placeholder="E-mail" required><br>
-            
-            <label>Ano de nascimento:</label>
-            <input type="number" max="2026" min="1900"><br>
+  <label>Seu e-mail (para resposta dos magos):</label>
+  <input type="email" placeholder="seuemail@valfenda.com"><br><br>
 
-            <label>Telefone:</label>
-            <input type="tel" name="telefone"><br>
+  <label>Ano de nascimento (para definir sua era):</label>
+  <input type="number"><br><br>
 
-            <label>Seu site:</label>
-            <input type="url" name="site" required></input><br>
+  <label>Telefone (ou forma de contato do Condado):</label>
+  <input type="tel"><br><br>
 
-            <label>Senha:</label>
-            <input type="password" name="senha"><br>
+  <label>Seu reino ou site (caso possua):</label>
+  <input type="url" placeholder="https://meureino.com"><br><br>
 
-            <label>Envie seu arquivo:</label>
-            <input type="file" name="arquivo"><br>
+  <label>Senha secreta (para acessar os portões de Moria):</label>
+  <input type="password"><br><br>
 
-            <label>Escolha sua cor:</label>
-            <input type="color" name="color"><br>
+  <label>Envie um artefato ou mensagem (arquivo):</label>
+  <input type="file"><br><br>
 
-            <label>Data de nascimento:</label>
-            <input type="date" name="data"><br>
+  <label>Escolha a cor do seu estandarte:</label>
+  <input type="color"><br><br>
 
-            <label>Data e hora:</label>
-            <input type="datetime-local" name="datahora"><br>
+  <label>Data de nascimento (na Terra Média):</label>
+  <input type="date"><br><br>
 
-            <label>Hora:</label>
-            <input type="time" name="hora"><br>
+  <label>Data e hora da sua jornada:</label>
+  <input type="datetime-local"><br><br>
 
-            <label>Mês:</label>
-            <input type="month" name="mes"><br>
+  <label>Hora preferida para encontros do conselho:</label>
+  <input type="time"><br><br>
 
-            <label>Semana:</label>
-            <input type="week" name="semana"><br>
+  <label>Mês de sua jornada:</label>
+  <input type="month"><br><br>
 
-            <label>Buscar:</label>
-            <input type="search" name="buscar"><br>
-            
-            <input type="reset" name="limpar" value="Limpar formulário">
-            
-            <!--<input type="submit" name="enviar" value="Enviar">-->
+  <label>Semana da missão:</label>
+  <input type="week"><br><br>
 
-            <button>Enviar mensagem</button>
+  <label>Buscar personagem ou local:</label>
+  <input type="search" placeholder="Ex: Frodo, Mordor, Gandalf">
 
-        </form>
-    </main>
+  <br><br>
+
+  <button type="reset">Limpar pergaminho</button>
+  <button type="submit">Enviar mensagem</button>
+</form>
+
 </body>
 </html>
