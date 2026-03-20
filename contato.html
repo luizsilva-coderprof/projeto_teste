@@ -28,11 +28,52 @@
 
         <form action="" method="post">
             <label>Nome:</label>
-            <input type="text" name="nome" placeholder="Nome">
-            <label>E-mail:</label>
-            <input type="email" name="email" placeholder="E-mail">
+            <input type="text" name="nome" placeholder="Nome" required><br>
 
-            <input type="submit" name="enviar" value="Ënviar"
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="E-mail" required><br>
+            
+            <label>Ano de nascimento:</label>
+            <input type="number" max="2026" min="1900"><br>
+
+            <label>Telefone:</label>
+            <input type="tel" name="telefone"><br>
+
+            <label>Seu site:</label>
+            <input type="url" name="site" required></input><br>
+
+            <label>Senha:</label>
+            <input type="password" name="senha"><br>
+
+            <label>Envie seu arquivo:</label>
+            <input type="file" name="arquivo"><br>
+
+            <label>Escolha sua cor:</label>
+            <input type="color" name="color"><br>
+
+            <label>Data de nascimento:</label>
+            <input type="date" name="data"><br>
+
+            <label>Data e hora:</label>
+            <input type="datetime-local" name="datahora"><br>
+
+            <label>Hora:</label>
+            <input type="time" name="hora"><br>
+
+            <label>Mês:</label>
+            <input type="month" name="mes"><br>
+
+            <label>Semana:</label>
+            <input type="week" name="semana"><br>
+
+            <label>Buscar:</label>
+            <input type="search" name="buscar"><br>
+            
+            <input type="reset" name="limpar" value="Limpar formulário">
+            
+            <!--<input type="submit" name="enviar" value="Enviar">-->
+
+            <button>Enviar mensagem</button>
 
         </form>
     </main>
