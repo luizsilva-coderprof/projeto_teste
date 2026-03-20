@@ -27,7 +27,7 @@
 
 <form action="" method="post">
   <label for="namex">Seu nome (como é conhecido na Terra Média):</label>
-  <input type="text" placeholder="Ex: Aragorn, filho de Arathorn" title="Informe o nome" name="namex"><br><br>
+  <input type="text" value="Texto" minlength="3" maxlength="10" placeholder="Ex: Aragorn, filho de Arathorn" title="Informe o nome" id="namex"><br><br>
 
   <label>Seu e-mail (para resposta dos magos):</label>
   <input type="email" placeholder="seuemail@valfenda.com"><br><br>
@@ -53,6 +53,8 @@
   <label>Data de nascimento (na Terra Média):</label>
   <input type="date"><br><br>
 
+  <fieldset>
+    <legend>Campos relacionados a tempo</legend>
   <label>Data e hora da sua jornada:</label>
   <input type="datetime-local"><br><br>
 
@@ -64,9 +66,26 @@
 
   <label>Semana da missão:</label>
   <input type="week"><br><br>
+  </fieldset>
 
   <label>Buscar personagem ou local:</label>
-  <input type="search" placeholder="Ex: Frodo, Mordor, Gandalf">
+  <input type="search" placeholder="Ex: Frodo, Mordor, Gandalf"><br>
+
+  <label for="desejoterramedia">Desejo terra media</label><br>
+  <textarea name="desejoterramedia" id="desejoterramedia" minlength="10" maxlength="1000" rows="5" cols="70"></textarea><br>
+
+  <label for="personagens">Qual seu personagem principal?</label>
+  <select required id="personagens">
+    <option value="Frodo Bolseiro">Frodo Bolseiro</option>
+    <option value="Gandalf">Gandalf</option>
+    <option value="Aragon">Aragon</option>
+    <option value="Legolas">Legolas</option>
+    <option value="Gollum">Gollum</option>
+  </select><br><br>
+
+  <input type="radio" name="filmepreferido" value="Filme 1" id="filme1"><label for="filme1">Filme 1</label>
+  <input type="radio" name="filmepreferido" value="Filme 2" id="filme2"><label for="filme2">Filme 2</label>
+  <input type="radio" name="filmepreferido" value="Filme 3" id="filme3"><label for="filme3">Filme 3</label>
 
   <br><br>
 
