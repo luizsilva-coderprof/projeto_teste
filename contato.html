@@ -1,97 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-     <meta charset="UTF-8">
-    <title>Contato - Terra Média</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="titulo_principal">
-    <h1>O senhor dos anéis</h1>
-    <h2>Uma das trilogias mais famosas do cinema</h2>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="sinopse.html">Sinopse</a>
-        <a href="imagemfilme.html">Imagem do filme</a>
-        <a href="personagens.html">Personagens principais</a>
-        <a href="informacoes.html">Informações</a>
-        <a href="ordem.html">Ordem dos filmes</a>
-        <a href="curiosidades.html">Curiosidades</a>
-        <a href="impacto.html">Impacto Cultural</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</div>
+    <div id="titulo_principal">
+        <h1>O senhor dos anéis</h1>
+        <h2>Uma das trilogias mais famosas do cinema</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sinopse.html">Sinopse</a>
+            <a href="imagemfilme.html">Imagem do filme</a>
+            <a href="personagens.html">Personagens principais</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="ordem.html">Ordem dos filmes</a>
+            <a href="curiosidades.html">Curiosidades</a>
+            <a href="impacto.html">Impacto Cultural</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+    <h2 class="titulo_secundario">Entre em contato:</h2>
+    <form action="processa.php" method="get" autocomplete="off">
+        <label for="nomepessoa">Nome:</label>
+        <input type="text" disabled name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15"  placeholder="Informe seu nome"><br><br>
 
-<h1 class="titulo_secundario">Envie sua mensagem à Terra Média</h1>
-<p>Use o formulário abaixo para enviar sua mensagem ao Conselho de Elrond.</p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
 
-<form action="" method="post">
-  <label for="namex">Seu nome (como é conhecido na Terra Média):</label>
-  <input type="text" value="Texto" minlength="3" maxlength="10" placeholder="Ex: Aragorn, filho de Arathorn" title="Informe o nome" id="namex"><br><br>
+        <label for="ano">Ano de nascimento:</label>
+        <input type="number" id="ano" name="ano" max="2026" min="1900" placeholder="Informe ano de nascimento"><br><br>
 
-  <label>Seu e-mail (para resposta dos magos):</label>
-  <input type="email" placeholder="seuemail@valfenda.com"><br><br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone"><br><br>
 
-  <label>Ano de nascimento (para definir sua era):</label>
-  <input type="number"><br><br>
+        <label for="github">Infome seu github:</label>
+        <input type="url" name="github" id="github" placeholder="Informe seu github"><br><br>
 
-  <label>Telefone (ou forma de contato do Condado):</label>
-  <input type="tel"><br><br>
+        <label for="senha">Infome sua senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
 
-  <label>Seu reino ou site (caso possua):</label>
-  <input type="url" placeholder="https://meureino.com"><br><br>
+        <label for="arquivo">Anexe um arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
 
-  <label>Senha secreta (para acessar os portões de Moria):</label>
-  <input type="password"><br><br>
+        <label for="cor">Escolha uma cor:</label>
+        <input type="color" id="cor" name="cor"><br><br>
 
-  <label>Envie um artefato ou mensagem (arquivo):</label>
-  <input type="file"><br><br>
+        <fieldset>
+            <legend>Campos de tempo</legend>
+            <label for="data">Informe a data</label>
+            <input type="date" name="data" id="data"><br><br>
 
-  <label>Escolha a cor do seu estandarte:</label>
-  <input type="color"><br><br>
+            <label for="mes">Informe o mes</label>
+            <input type="month" name="mes" id="mes"><br><br>
 
-  <label>Data de nascimento (na Terra Média):</label>
-  <input type="date"><br><br>
+            <label for="semana">Informe a semana</label>
+            <input type="week" name="semana" id="semana"><br><br>
 
-  <fieldset>
-    <legend>Campos relacionados a tempo</legend>
-  <label>Data e hora da sua jornada:</label>
-  <input type="datetime-local"><br><br>
+            <label for="hora">Informe a hora:</label>
+            <input type="time" name="hora" id="hora"><br><br>
 
-  <label>Hora preferida para encontros do conselho:</label>
-  <input type="time"><br><br>
+            <label for="datahora">Data e hora atual</label>
+            <input type="datetime-local" name="datahora" id="datahora"><br><br>
+        </fieldset>
 
-  <label>Mês de sua jornada:</label>
-  <input type="month"><br><br>
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" id="pesquisa" name="pesquisa"><br><br>
 
-  <label>Semana da missão:</label>
-  <input type="week"><br><br>
-  </fieldset>
+        <label for="descricao">Infome aqui o que voce gosta nos filmes:</label><br>
+        <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
 
-  <label>Buscar personagem ou local:</label>
-  <input type="search" placeholder="Ex: Frodo, Mordor, Gandalf"><br>
+        <fieldset>
+            <legend>Qual seu filme favorito?</legend>
+            <label for="filme1"><input type="radio" name="filme" id="filme1" value="Filme 1">Filme 1</label>
 
-  <label for="desejoterramedia">Desejo terra media</label><br>
-  <textarea name="desejoterramedia" id="desejoterramedia" minlength="10" maxlength="1000" rows="5" cols="70"></textarea><br>
+            <label for="filme2"><input checked type="radio" name="filme" id="filme2" value="Filme 2">Filme 2</label>
+            
+            <label for="filme3"><input type="radio" name="filme" id="filme3" value="Filme 3">Filme 3</label>
+        </fieldset>
 
-  <label for="personagens">Qual seu personagem principal?</label>
-  <select required id="personagens">
-    <option value="Frodo Bolseiro">Frodo Bolseiro</option>
-    <option value="Gandalf">Gandalf</option>
-    <option value="Aragon">Aragon</option>
-    <option value="Legolas">Legolas</option>
-    <option value="Gollum">Gollum</option>
-  </select><br><br>
+        <select>
+            <option value="filme 1">Filme 1</option>
+            <option value="filme 2">Filme 2</option>
+            <option selected value="filme 3">Filme 3</option>
+        </select><br><br>
 
-  <input type="radio" name="filmepreferido" value="Filme 1" id="filme1"><label for="filme1">Filme 1</label>
-  <input type="radio" name="filmepreferido" value="Filme 2" id="filme2"><label for="filme2">Filme 2</label>
-  <input type="radio" name="filmepreferido" value="Filme 3" id="filme3"><label for="filme3">Filme 3</label>
+        <select>
+            <optgroup label="Teste de Legenda optgroup">
+                <option value="Teste 1">Teste 1</option>
+                <option value="Teste 2">Teste 2</option>
+                <option value="Teste 3">Teste 3</option>
+                <option value="Teste 4">Teste 4</option>
+                <option value="Teste 5">Teste 5</option>
+            </optgroup>
+            <optgroup label="Teste 2 de Legenda optgroup">
+                <option value="Teste 1">Teste 1</option>
+                <option value="Teste 2">Teste 2</option>
+                <option value="Teste 3">Teste 3</option>
+                <option value="Teste 4">Teste 4</option>
+                <option value="Teste 5">Teste 5</option>
+            </optgroup>
+            <optgroup label="Teste 3 de Legenda optgroup">
+                <option value="Teste 1">Teste 1</option>
+                <option value="Teste 2">Teste 2</option>
+                <option value="Teste 3">Teste 3</option>
+                <option value="Teste 4">Teste 4</option>
+                <option value="Teste 5">Teste 5</option>
+            </optgroup>
+        </select><br><br>
 
-  <br><br>
+        <input type="range" name="escala" min="1" max="20"><br><br>
 
-  <button type="reset">Limpar pergaminho</button>
-  <button type="submit">Enviar mensagem</button>
-</form>
+        <fieldset>
+            <legend>Desenvolvimento Web</legend>
+            <label>PHP<input type="checkbox" name="php" value="php"></label>
+            <label>HTML<input type="checkbox" name="html" value="html"></label>
+            <label>CSS<input type="checkbox" name="css" value="css"></label>
+            <label>JAVASCRIPT<input type="checkbox" name="js" value="js"></label>
+        </fieldset><br><br>
+        
+        <label>País:</label>
+        <input type="pais" id="pais" name="pais" list="pais-lista"><br>
 
+        <datalist id="pais-lista">
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="França">França</option>
+            <option value="Paraguai">Paraguai</option>
+             <option value="Alemanha">Alemanha</option>
+        </datalist><br><br>
+
+        <audio controls autoplay loop muted>
+            <source src="audio/musica.mp3" type="audio/mp3">
+            Seu navegador não suporta reprodução de áudio
+        </audio><br><br>
+
+        <video controls autoplay>
+            <source src="videos/videoteste.mp4" type="video/mp4">
+            Seu navegador não suporta reprodução de vídeos
+        </video><br><br>
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/K69eff1W5S8?si=OR4IdOQAzXmywpGq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
 </body>
 </html>
