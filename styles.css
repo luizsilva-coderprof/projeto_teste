@@ -62,11 +62,59 @@ nav a{
 
 
 #teste_estilo_lista_ul{
-
+     list-style-type: none; /*disc, circle, none defini o estilo de marcador da lista não ordenada (UL) */
 }
 
 #teste_estilo_lista_ol{
+   /* list-style-type: upper-alpha; /*decimal - lower-roman - upper-roman - lower-greek - lower-alpha - upper-alpha - define o estilo de marcadores de listas ordenadas*/
+    list-style-image: url('img/seta_direita_vermelha.png') ;
+}
 
+li{
+    border: solid 3px orange;
+    list-style-position: outside; /*Ele serve para dizer ao navegador se o marcador da lista faz parte ou não do texto da lista: inside e outside*/
+}
+
+#impacto{
+    /*background: url('img/senhordosaneis_fundo.jpg') no-repeat; resume a imagem de fundo e repetição em uma linha*/
+
+    background-image: url('img/senhordosaneis_fundo.jpg'); /*Carrega imagem ao fundo do elemento html*/
+    background-repeat: no-repeat ; /* no-repeat / repeat / repeat-y / repeat-x Configura a forma como a imagem ira repetir ao fundo do elemento html*/
+    /* background-position: center; /*left, right, top, bottom, center e pode dois ao mesmo tempo
+    width: 2000px;
+    height: 1500px; */
+    background-size: cover; /*Serve para definir COMO a imagem será exibida ao fundo do elemento html - contain - cover - px - % auto*/
+    background-attachment: fixed; /*Define como a imagem vai lidar com scroll ao fundo do elemento html - scroll e fixed*/
+    text-shadow: 3px 3px 2px red; /*Define a sombra do texto*/
+    position: relative;
+}
+
+.noticia{
+    border: solid 3px white;
+    width: 200px;
+    position: fixed; /*Define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute e static*/
+    height: 100px;
+    overflow: auto; /*configura o comportamento de quando por exemplo um texto passa das bordas de um elemento html (da um overflow) visible/hidden/scroll/auto;*/
+    box-shadow: 3px 3px 3px 3px orange; /*Define a sombra de um elemento html de bloco*/
+}
+
+.um{
+    background-color: blue;
+    top: 0px;
+    left: 30px;
+    z-index: 3; /*Define a ordem que o elemento vai ficar uns atras dos outros*/
+}
+
+.dois{
+    background-color: red;
+    top: 40px;
+    left: 70px;
+}
+
+.tres{
+    background-color: green;
+    top: 80px;
+    left: 100px;
 }
 /* .teste_display{
     background-color: orange;
