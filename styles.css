@@ -60,6 +60,15 @@ nav a{
     text-decoration: none;
 }
 
+#teste_estilo_lista_ul{
+    list-style-position: outside;
+    list-style-type: none;
+    list-style-image: url('img/seta_direita_vermelha.png');
+}
+
+#teste_estilo_lista_ol{
+    list-style-type: none;
+}
 /* .teste_display{
     background-color: orange;
     display: inline-block;
