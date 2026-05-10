@@ -92,7 +92,7 @@ li{
 .noticia{
     border: solid 3px white;
     width: 200px;
-    position: fixed; /*Define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute e static*/
+    position: relative; /*Define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute e static*/
     height: 100px;
     overflow: auto; /*configura o comportamento de quando por exemplo um texto passa das bordas de um elemento html (da um overflow) visible/hidden/scroll/auto;*/
     box-shadow: 3px 3px 3px 3px orange; /*Define a sombra de um elemento html de bloco*/
