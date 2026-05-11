@@ -22,6 +22,10 @@ body{
     font-size: 16px; /*Tamanho da fonte - px/em/rem*/
 }
 
+body:hover{
+    color: red;
+}
+
 #layout{
     font-size: 1em; /*Herda o tamanho do pai dele (no nosso caso o body) com um multiplicador*/
     display: flex;
