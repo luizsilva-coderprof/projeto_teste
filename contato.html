@@ -25,7 +25,7 @@
     <h2 class="titulo_secundario">Entre em contato:</h2>
     <form action="processa.php" method="get" autocomplete="off">
         <label for="nomepessoa">Nome:</label>
-        <input type="text" disabled name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15"  placeholder="Informe seu nome"><br><br>
+        <input type="text" value="MEU NOME" readonly name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15"  placeholder="Informe seu nome"><br><br>
 
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
@@ -121,7 +121,7 @@
             Navegador não é compatível para executar áudio!
         </audio><br><br>
 
-        <video controls autoplay loop poster="">
+        <video controls autoplay loop poster=""> <!--Imagem de capa do vídeo-->
             <source src="videos/videoteste.mp4" type="video/mp4">
         </video><br><br>
 
