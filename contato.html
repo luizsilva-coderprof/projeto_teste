@@ -25,7 +25,7 @@
     <h2 class="titulo_secundario">Entre em contato:</h2>
     <form action="processa.php" method="get" autocomplete="off">
         <label for="nomepessoa">Nome:</label>
-        <input type="text" value="MEU NOME" readonly name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15"  placeholder="Informe seu nome"><br><br>
+        <input type="text" name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15"  placeholder="Informe seu nome"><br><br>
 
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
@@ -74,6 +74,7 @@
 
         <fieldset>
             <legend>Qual seu filme favorito?</legend>
+            
             <label for="filme1"><input type="radio" name="filme" id="filme1" value="Filme 1">Filme 1</label>
 
             <label for="filme2"><input checked type="radio" name="filme" id="filme2" value="Filme 2">Filme 2</label>
