@@ -96,36 +96,59 @@ nav a:hover {
 /*Aula dia 19/10 */
 /*Página personagens*/
 li{
-
+    border: 2px solid orange;
 }
 
 #teste_ol{
-  
+  list-style-position: outside; /*Serve para definir se o marcador da lista faz parte do texto (outside/inside)*/
+  list-style-type: lower-greek; /*decimal, lower-roman, upper-roman, lower-alpha, upper-alpha, lower-greek, upper-greek*/
 }
 
 #teste_ul{
-    
+    list-style-position: inside;
+    list-style-type: none; /*altera o tipo de marcador da lista: square, disc, circle, none*/
+    list-style-image: url('img/seta_direita_vermelha.png'); /*coloca imagem como marcador de lista*/
 }
 
 /*Página Impacto*/
 #impacto{
-    
+    background-image: url('img/senhordosaneis_fundo.jpg'); /*serve para colocar imagem de fundo na pagina*/
+    background-attachment: fixed; /*define o comportamento da imagem de fundo ao dar scroll na pagina*/
+    background-repeat: no-repeat; /*Define repetição ou não da imagem ao fundo: repeat, repeat-x, repeat-y*/
+    background-size: cover; /*largura e altura da imagem ao fundo: cover, contains, em px (1000px 100px), em porcentagem (100% e 100%)*/
+    background-position: center; /*define o posicionamento da imagem ao fundo (top, left, bottom, right, center)*/
 }
 
 /*Página Impacto*/
 .noticia{
+    width: 200px;
+    height: 100px;
+    position: relative; /*static, relative, absolute, fixed*/
+    overflow: auto; /*hidden, scroll, visible*/
+    text-shadow: 2px 2px 2px black; /*cria sombra no texto direçao para os lados, para cima, distribuição da sombra e cor da sombra*/
+    box-shadow: 2px 2px 5px orange, /*cria sombra nas caixas, tanto fora quanto dentro da caixa*/
+    inset 3px 3px 4px yellow;
 }
 
 .um{
-   
+   background-color: red;
+   left: 20px;
+   position: absolute;
+   z-index:2;
 }
 
 .dois{
-
+    background-color: blue;
+    left: 80px;
+    position: absolute;
+    z-index: 3;
 }
 
 .tres{
-  
+  background-color: green;
+  left: 140px;
+  position: absolute;
+   z-index: 1;
 }
 
 h1{
